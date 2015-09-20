@@ -1,4 +1,4 @@
-# Week1
+# COW BML ACM Week1
 #Category HAL9000 (Beginner)
 ##Minimum Dot Product: 
 We’re all familiar with vectors in physics. Represent a vector as a set of n integers, and calculate the minimum scalar product of the vectors. For example: -  <br> 
