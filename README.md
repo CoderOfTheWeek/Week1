@@ -1,11 +1,11 @@
 # Week1
 #Category HAL9000 (Beginner)
 ##Minimum Dot Product: 
-We’re all familiar with vectors in physics. Represent a vector as a set of n integers, and calculate the minimum scalar product of the vectors. For example: - 
-If Vector A is 5 4 3 1 4 6 6 
-If Vector B is 1 1 2 2 1 1 8 
-Then a potential final answer could be 42. (Not saying that’s the solution) 
-Remember that the vectors need not be of equal length.  
+We’re all familiar with vectors in physics. Represent a vector as a set of n integers, and calculate the minimum scalar product of the vectors. For example: -  <br> 
+If Vector A is 5 4 3 1 4 6 6 <br> 
+If Vector B is 1 1 2 2 1 1 8  <br>
+Then a potential final answer could be 42. (Not saying that’s the solution) <br> 
+Remember that the vectors need not be of equal length.  <br>
 
 #Category JARVIS
 ##Flood Fill
