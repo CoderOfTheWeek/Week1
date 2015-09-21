@@ -1,0 +1,102 @@
+//By Prateek Balhara
+#include<stdio.h>
+
+main()
+{
+    int n1,n2,i,j,t,sum=0,temp;
+    // Inputing first vector
+    printf("Enter the number of elements in Vector One. \n");
+    scanf("%d",&n1);
+    int v1[n1];
+    for(i=0;i<n1;i++)
+    {
+        printf("Enter the %d element :",i+1);
+        scanf("%d",&v1[i]);
+    }
+
+    //Inputing second vector
+     printf("\n\nEnter the number of elements in Vector Two. \n");
+    scanf("%d",&n2);
+    int v2[n2];
+    for(i=0;i<n2;i++)
+    {
+        printf("Enter the %d element :",i+1);
+        scanf("%d",&v2[i]);
+    }
+
+    t=(n1>n2)?n1:n2;
+
+
+    if(n1>n2)
+    {
+        int a[t];
+        for(i=0;i<n2;i++)
+            a[i]=v2[i];
+        for(i=n2;i<n1;i++)
+            a[i]=0;//padding array with zeros
+
+    for(i=0;i<t-1;i++)//sorting
+    {
+        for(j=i;j<t;j++)
+        {
+            if(v1[i]<v1[j])
+            {
+                temp=v1[j];
+                v1[j]=v1[i];
+                v1[i]=temp;
+            }
+            if(a[i]>a[j])
+            {
+                temp=a[j];
+                a[j]=a[i];
+                a[i]=temp;
+            }
+
+        }
+    }
+
+      // finding the dot product
+    for(i=0;i<t;i++)
+        sum=sum+(v1[i]*a[i]);
+
+
+    }
+
+    else
+    {
+        int a[t];
+        for(i=0;i<n1;i++)
+            a[i]=v1[i];
+        for(i=n1;i<n2;i++)
+            a[i]=0;//padding
+
+    for(i=0;i<t-1;i++)//sorting
+    {
+        for(j=i;j<t;j++)
+        {
+            if(a[i]<a[j])
+            {
+                temp=a[j];
+                a[j]=a[i];
+                a[i]=temp;
+            }
+            if(v2[i]>v2[j])
+            {
+                temp=v2[j];
+                v2[j]=v2[i];
+                v2[i]=temp;
+            }
+
+        }
+    }
+
+    // finding the dot product
+    for(i=0;i<t;i++)
+        sum=sum+(v2[i]*a[i]);
+
+    }
+
+    printf("\nThe Minimum Dot Product of the two vectors is : %d",sum);
+
+}
+
